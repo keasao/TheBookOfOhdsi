@@ -20,7 +20,10 @@ bookdown::pdf_book:
   keep_tex: yes
   toc_appendix: yes
   pandoc_args: --top-level-division=chapter
+  documentclass: bxjsarticle
+  classoption: xelatex,ja=standard
+  geometry: no
 bookdown::epub_book:
   stylesheet: style.css
-  pandoc_args: --webtex=https://latex.codecogs.com/svg.latex? 
+  pandoc_args: --webtex=https://latex.codecogs.com/svg.latex?
   epub_version: epub3
